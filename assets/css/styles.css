@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
