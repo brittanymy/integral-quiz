@@ -64,7 +64,7 @@ button {
     background-color: var(--clr-font);
     font-size: var(--button-font-size);
     text-transform: uppercase;
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
 }
 
 button:hover {
@@ -76,7 +76,7 @@ button:hover {
 }
 
 button:active {
-    transform: translateY(1px) scale(1.05);
+    transform: translateY(2px) scale(1.05);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
