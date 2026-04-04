@@ -12,14 +12,14 @@
     --title-font: 'Fresca';
     --body-font: 'Nunito Sans';
 
-    --h1-font-size: 48px;
-    --h2-font-size: 32px;
-    --p-font-size: 24px;
+    --h2-font-size: 48px;
+    --p-font-size: 32px;
+    --button-font-size: 24px;
 
     --clr-bg: #fcfcfc;
     --clr-title: #2b2d42;
     --clr-font: #333333;
-    --clr-button: #ff6b35;
+    --clr-button: #f18071;
     --clr-offset-1: #8d99ae;
     --clr-offset-2: #edf2f4; 
 
@@ -46,13 +46,35 @@ h1 {
 }
 
 p {
-    font: var(--p-font-size);
+    font-family: var(--body-font);
     font-size: var(--p-font-size);
+    padding-bottom: 50px;
+}
+
+button {
+    padding-top: var(--header-height);
+    border-radius: 14px;
+    padding: 15px;
+    font-family: var(--body-font);
+    color: #fff;
+    background-color: var(--clr-font);
+    font-size: var(--button-font-size);
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--clr-button);
+    border-color: var(--clr-button);
+}
+
+.site-logo {
+    height: 18rem;
 }
 
 .intro {
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
