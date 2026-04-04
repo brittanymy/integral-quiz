@@ -33,6 +33,10 @@
     --fz-model: 1000;
 }
 
+html {
+    background-image: url(/assets/images/background.svg);
+}
+
 body {
     display: grid;
     place-items: center;
@@ -60,12 +64,20 @@ button {
     background-color: var(--clr-font);
     font-size: var(--button-font-size);
     text-transform: uppercase;
+    font-weight: var(--font-medium);
 }
 
 button:hover {
     cursor: pointer;
     background-color: var(--clr-button);
     border-color: var(--clr-button);
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px var(--clr-offset-1);
+}
+
+button:active {
+    transform: translateY(1px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .site-logo {
@@ -77,4 +89,8 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fcfcfc;
+    padding: 4rem;
+    border-radius: 3rem;
+    box-shadow: 5px 5px 15px var(--clr-offset-1);
 }
